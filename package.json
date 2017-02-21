@@ -1,8 +1,7 @@
 {
   "name": "language-lc4",
-  "main": "./lib/language-lc4",
-  "version": "1.0.0",
-  "description": "LC4 Assembly Syntax highlighting and autocompletion for Atom",
+  "version": "0.0.0",
+  "description": "LC-4 Assembly Syntax highlighting and autocompletion for Atom",
   "keywords": [
     "LC-3",
     "LC3",
