@@ -1,7 +1,7 @@
 'fileTypes': [
   'asm'
 ]
-'name': 'Assembly (LC-3)'
+'name': 'Assembly (LC-4)'
 'patterns': [
 
   {

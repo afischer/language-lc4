@@ -2,19 +2,19 @@
 'context-menu':
   'atom-text-editor': [
     {
-      'label': 'Toggle language-lc3'
-      'command': 'language-lc3:toggle'
+      'label': 'Toggle language-lc4'
+      'command': 'language-lc4:toggle'
     }
   ]
 'menu': [
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'language-lc3'
+      'label': 'language-lc4'
       'submenu': [
         {
           'label': 'Toggle'
-          'command': 'language-lc3:toggle'
+          'command': 'language-lc4:toggle'
         }
       ]
     ]

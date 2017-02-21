@@ -1,20 +1,23 @@
 {
-  "name": "language-lc3",
-  "main": "./lib/language-lc3",
-  "version": "1.1.0",
-  "description": "LC-3 Assembly Syntax highlighting and autocompletion for Atom",
+  "name": "language-lc4",
+  "main": "./lib/language-lc4",
+  "version": "1.0.0",
+  "description": "LC4 Assembly Syntax highlighting and autocompletion for Atom",
   "keywords": [
     "LC-3",
     "LC3",
-    "language-lc3",
+    "LC-4",
+    "LC4",
+    "language-lc4",
+    "lc4 upenn",
     "Assembly",
-    "Little Computer 3"
+    "Little Computer 4",
     "language"
   ],
   "activationCommands": {
-    "atom-workspace": "language-lc3:toggle"
+    "atom-workspace": "language-lc4:toggle"
   },
-  "repository": "https://github.com/CalebAlbers/language-lc3",
+  "repository": "https://github.com/afischer/language-lc4",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
