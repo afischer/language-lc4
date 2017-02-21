@@ -1,11 +1,11 @@
 {
   "name": "language-lc4",
   "author": {
-    "name" : "Andrew Fischer",
-    "email" : "afischer15@mac.com",
-    "url" : "http://andrewfis.ch/"
+    "name": "Andrew Fischer",
+    "email": "afischer15@mac.com",
+    "url": "http://andrewfis.ch/"
   },
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "LC-4 Assembly Syntax highlighting and autocompletion for Atom",
   "keywords": [
     "LC-3",
@@ -25,5 +25,5 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies" : {}
+  "dependencies": {}
 }
