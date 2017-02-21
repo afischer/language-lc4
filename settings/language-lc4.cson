@@ -1,36 +1,77 @@
-'.source.lc3':
+'.source.lc4':
   'editor':
     'commentStart': ';'
 
   'completions': [
-    'ADD'
-    'AND'
-    'BR'
+    ## Opcode mnemonics
+
+    'NOP'
+
+    # Conditional Branch
     'BRn'
     'BRnz'
     'BRnp'
     'BRnzp'
     'BRz'
     'BRzp'
-    'JMP'
+
+    # Arithmatic Expressions
+    'ADD'
+    'MUL'
+    'SUB'
+    'DIV'
+
+    'CMP'
+    'CMPU'
+    'CMPI'
+    'CMPIU'
+
+    # Subroutine Jumps
     'JSR'
     'JSRR'
-    'LD'
-    'LDI'
-    'LDR'
-    'LEA'
+
+    # Boolean Logic
+    'AND'
     'NOT'
-    'RET'
-    'RTI'
-    'ST'
-    'STI'
+    'OR'
+    'XOR'
+
+    # Load, Store Base
+    'LDR'
     'STR'
+
+    # Return from Interrupt
+    'RTI'
+
+    'CONST'
+
+    'SLL'
+    'SRA'
+    'SRL'
+    'MOD'
+
+    'JMPR'
+    'JMP'
+    'HICONST'
     'TRAP'
-    '.ORIG'
-    '.END'
-    'HALT'
-    '.BLKW'
+
+    # Pseudo Instructions
+    'RET'
+    'LEA'
+    'LC'
+
+    # Assembly Directive
+    '.DATA'
+    '.CODE'
+    '.ADDR'
     '.FILL'
+    '.END'
+    '.FALIGN'
+    '.BLKW'
+    '.CONST'
+    '.UCONST'
+
+    # Registers
     'R0'
     'R1'
     'R2'
@@ -40,16 +81,8 @@
     'R6'
     'R7'
     'R8'
-    'GETC'
+
     'IN'
     'OUT'
     'PUTS'
-    'PUTSP'
-    'STRINGZ'
-    '.ORIG'
-    'DDR'
-    'DSR'
-    'KBDR'
-    'KBSR'
-    'MCR'
   ]
