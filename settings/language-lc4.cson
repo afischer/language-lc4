@@ -1,6 +1,10 @@
 '.source.assembly.asm.x86.lc4':
   'editor':
-    'commentStart': ';'
+    'softTabs': true
+    'tabLength': 2
+    'commentStart': '; '
+    'increaseIndentPattern': '^(LOOP|SUB)(_[a-zA-Z]+)?'
+    'decreaseIndentPattern': '^END(_[a-zA-Z]+)?'
 
   'completions': [
     ## Opcode mnemonics
