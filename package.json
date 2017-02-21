@@ -9,18 +9,16 @@
     "LC-4",
     "LC4",
     "language-lc4",
+    "lc4 assembly",
     "lc4 upenn",
+    "university of pennsylvania",
+    "upenn",
     "Assembly",
-    "Little Computer 4",
-    "language"
+    "Little Computer 4"
   ],
-  "activationCommands": {
-    "atom-workspace": "language-lc4:toggle"
-  },
   "repository": "https://github.com/afischer/language-lc4",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
-  },
-  "dependencies": {}
+  }
 }
