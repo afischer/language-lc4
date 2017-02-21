@@ -1,0 +1,8 @@
+'.source.assembly.asm.x86.lc4':
+  'subroutine':
+    'prefix': 'SUB, sub'
+    'body': """
+      SUB_${1:ROUTINE}
+        $2
+      END_${1:ROUTINE}
+    """

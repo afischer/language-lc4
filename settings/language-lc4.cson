@@ -1,4 +1,4 @@
-'.source.lc4':
+'.source.assembly.asm.x86.lc4':
   'editor':
     'commentStart': ';'
 
