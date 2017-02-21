@@ -1,7 +1,10 @@
 'fileTypes': [
   'asm'
 ]
+
 'name': 'Assembly (LC-4)'
+'scopeName': 'source.assembly.asm.x86.lc4'
+
 'patterns': [
   {
     'match': ';.*'
@@ -10,12 +13,12 @@
   }
   {
     'match': '[rR][0-7]',
-    'name': 'entity.name.function.reg'
+    'name': 'variable.register'
     'comment': 'Register format R#'
   }
   {
     'match':  '((\\s|^.)([rR][tT][iI])|([nN][oO][tTpP])|([sS][tT][iIrR]?)|([jJ][sS][rR][rR]?)|([tT][rR][aA][pP])|(([bB][rR])[nN]?[zZ]?[pP]?)|([rR][eE][tT])|([jJ][mM][pP][rR]?)|([aA][nNdD][dD])|([lL](([eE][aA])|([dD][iIrR]?)))|([hH][aA][lL][tT])|([iI][nN])|([oO][uU][tT])|([gG][eE][tT][cC])|([pP][uU][tT][sS][pP]?)|([mM][uU][lL])|([sS][uU][bB])|([dD][iI][vV])|([cC][mM][pP][iIuU]?[uU]?)|([xX]?[oO][rR])|([lL][dD][rR])|([hH]?[iI]?[cC][oO][nN][sS][tT])|([sS][lLrR][aAlL])|([mM][oO][dD])|([lL][eEcC][aA]?))\\s'
-    'name': 'support.class.8086/8088'
+    'name': 'keyword.mnemonic'
     'comment': 'OPCODE format'
   }
   {
@@ -34,9 +37,9 @@
     'comment': 'Decimal numbers format #123 123'
   }
   {
-    'match': '[\\w\\d]+:?'
-    'name':'markup.italic'
-    'comment': 'Label format'
+    'match': '(LOOP|SUB|END)(_[a-zA-Z]+)?'
+    'name':'entity.name.function.label'
+    'comment': 'Subroutine format'
   }
   {
     'match': '\\.(([oO][rR][iI][gG])|([fF][iI][lL][lL])|([eE][nN][dD])|([bB][lL][kK][wW])|([sS][tT][rR][iI][nN][gG][zZ])|([dD][aA][tT][aA])|([cC][oO][dD][eE])|([aA][dD][dD][rR])|([fF][aA][lL][iI][gG][nN])|([uU]?[cC][oO][nN][sS][tT]))'
@@ -44,4 +47,3 @@
     'comment': 'Directive format'
   }
 ]
-'scopeName': 'source.x86asm'
