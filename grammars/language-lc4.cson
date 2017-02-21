@@ -3,7 +3,6 @@
 ]
 'name': 'Assembly (LC-4)'
 'patterns': [
-
   {
     'match': ';.*'
     'name': 'comment.line'
@@ -15,14 +14,14 @@
     'comment': 'Register format R#'
   }
   {
-    'match':  '((\\s|^)([rR][tT][iI])|([nN][oO][tT])|([sS][tT][iIrR]?)|([jJ][sS][rR][rR]?)|([tT][rR][aA][pP])|(([bB][rR])[nN]?[zZ]?[pP]?)|([rR][eE][tT])|([jJ][mM][pP])|([aA][nNdD][dD])|([lL](([eE][aA])|([dD][iIrR]?)))|([hH][aA][lL][tT])|([iI][nN])|([oO][uU][tT])|([gG][eE][tT][cC])|([pP][uU][tT][sS][pP]?))\\s'
+    'match':  '((\\s|^.)([rR][tT][iI])|([nN][oO][tTpP])|([sS][tT][iIrR]?)|([jJ][sS][rR][rR]?)|([tT][rR][aA][pP])|(([bB][rR])[nN]?[zZ]?[pP]?)|([rR][eE][tT])|([jJ][mM][pP][rR]?)|([aA][nNdD][dD])|([lL](([eE][aA])|([dD][iIrR]?)))|([hH][aA][lL][tT])|([iI][nN])|([oO][uU][tT])|([gG][eE][tT][cC])|([pP][uU][tT][sS][pP]?)|([mM][uU][lL])|([sS][uU][bB])|([dD][iI][vV])|([cC][mM][pP][iIuU]?[uU]?)|([xX]?[oO][rR])|([lL][dD][rR])|([hH]?[iI]?[cC][oO][nN][sS][tT])|([sS][lLrR][aAlL])|([mM][oO][dD])|([lL][eEcC][aA]?))\\s'
     'name': 'support.class.8086/8088'
-    'comment': 'Opcode format'
+    'comment': 'OPCODE format'
   }
   {
-    'match': 'x[0-9A-F]{4}\\s'
+    'match': '0?x[0-9A-F]{4}\\s'
     'name': 'constant.numeric.hex'
-    'comment': 'Hexadecimal numbers format xFFFF'
+    'comment': 'Hexadecimal numbers format xFFFF, 0xFFFF'
   }
   {
     'match': '(b[01]+)\\s'
@@ -40,11 +39,9 @@
     'comment': 'Label format'
   }
   {
-    'match': '\\.(([oO][rR][iI][gG])|([fF][iI][lL][lL])|([eE][nN][dD])|([bB][lL][kK][wW])|([sS][tT][rR][iI][nN][gG][zZ]))'
+    'match': '\\.(([oO][rR][iI][gG])|([fF][iI][lL][lL])|([eE][nN][dD])|([bB][lL][kK][wW])|([sS][tT][rR][iI][nN][gG][zZ])|([dD][aA][tT][aA])|([cC][oO][dD][eE])|([aA][dD][dD][rR])|([fF][aA][lL][iI][gG][nN])|([uU]?[cC][oO][nN][sS][tT]))'
     'name': 'entity.name.function.directives'
     'comment': 'Directive format'
   }
-
-
 ]
 'scopeName': 'source.x86asm'
