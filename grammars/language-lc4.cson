@@ -37,7 +37,7 @@
     'comment': 'Decimal numbers format #123 123'
   }
   {
-    'match': '^(.)(DATA|CODE|ADDR|FILL|END|FALIGN|BLKW|OS)',
+    'match': '.(DATA|CODE|ADDR|FILL|END|FALIGN|BLKW|OS)',
     'name': 'constant.symbol.other'
     'comment': 'Directive format'
   }
