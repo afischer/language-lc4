@@ -17,7 +17,7 @@
     'comment': 'Register format R#'
   }
   {
-    'match':  '(OUT|PUTS|NOP|BR(n)?(z)?(p)?|ADD|MUL|SUB|DIV|CONST|UCONST|CMP(I)?(U)?|JSR(R)?|AND|NOT|OR|XOR|LDR|STR(?!ING)|RTI|CONST|SLL|SRA|SRL|MOD|JMP(R)?|HICONST|TRAP|LEA)'
+    'match':  '(OUT|PUTS|NOP|BR(n)?(z)?(p)?|ADD|MUL|SUB|DIV|CONST|UCONST|CMP(I)?(U)?|JSR(R)?|AND|NOT|OR|XOR|LDR|STR(?!ING)|RTI|CONST|SLL|SRA|SRL|MOD|JMP(R)?|HICONST|TRAP|LEA|LC) '
     'name': 'keyword.control'
     'comment': 'OPCODE format'
   }
@@ -37,7 +37,7 @@
     'comment': 'Decimal numbers format #123 123'
   }
   {
-    'match': '.(DATA|CODE|ADDR|FILL|FALIGN|BLKW|OS|STRINGZ)'
+    'match': '.(DATA|CODE|ADDR|FILL|UCONST|FALIGN|BLKW|OS|STRINGZ)[ |\n]'
     'name': 'constant.symbol.other'
     'comment': 'Directive format'
   }
