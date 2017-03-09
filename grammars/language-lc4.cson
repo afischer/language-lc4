@@ -12,7 +12,7 @@
     'comment': 'Comment format ;'
   }
   {
-    'match': '[rR][0-7]',
+    'match': '[rR][0-7]'
     'name': 'variable.language'
     'comment': 'Register format R#'
   }
@@ -37,7 +37,7 @@
     'comment': 'Decimal numbers format #123 123'
   }
   {
-    'match': '.(DATA|CODE|ADDR|FILL|FALIGN|BLKW|OS|STRINGZ)',
+    'match': '.(DATA|CODE|ADDR|FILL|FALIGN|BLKW|OS|STRINGZ)'
     'name': 'constant.symbol.other'
     'comment': 'Directive format'
   }
@@ -45,5 +45,10 @@
     'match': '([a-zA-Z]+)[(_[a-zA-Z]+)]?'
     'name':'entity.name.function'
     'comment': 'Subroutine format'
+  }
+  {
+    'match': '".*"'
+    'name': 'string.quoted.double'
+    'comment': 'double quoted string'
   }
 ]
