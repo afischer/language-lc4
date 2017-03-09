@@ -22,7 +22,7 @@
     'comment': 'OPCODE format'
   }
   {
-    'match': '0?x[0-9A-F]{4}\\s'
+    'match': '0?x[0-9A-F]+\\s'
     'name': 'constant.numeric.hex'
     'comment': 'Hexadecimal numbers format xFFFF, 0xFFFF'
   }
